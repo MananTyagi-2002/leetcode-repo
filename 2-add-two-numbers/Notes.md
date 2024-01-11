@@ -1,1 +1,1 @@
-<h2>add-two-numbers Notes</h2><hr>i made a curr_sum 
+<h2>add-two-numbers Notes</h2><hr>i made a curr_sum with the sum of all the di
