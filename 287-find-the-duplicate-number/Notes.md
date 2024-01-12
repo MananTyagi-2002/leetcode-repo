@@ -1,1 +1,1 @@
-<h2>find-the-duplicate-number Notes</h2><hr>we did this with a method cll
+<h2>find-the-duplicate-number Notes</h2><hr>we did this with a method called 
