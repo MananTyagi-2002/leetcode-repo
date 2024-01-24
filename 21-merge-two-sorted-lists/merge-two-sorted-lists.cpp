@@ -11,10 +11,10 @@
 class Solution {
 public:
     ListNode* mergeTwoLists(ListNode* list1, ListNode* list2) {
-
+        ListNode *head =NULL;
         ListNode* temp = new ListNode(0);
-        ListNode *head =temp;
-
+        
+        head=temp;
         ListNode* temp1=list1;
         ListNode* temp2=list2;
         
