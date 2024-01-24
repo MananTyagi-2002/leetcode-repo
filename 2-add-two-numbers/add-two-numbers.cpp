@@ -32,8 +32,9 @@ public:
             }
             else 
             {
-                int temp=curr_sum/10;  
-                temp=curr_sum-(temp*10);
+                int temp=curr_sum%10; 
+                // int temp=curr_sum/10;  
+                // temp=curr_sum-(temp*10);
                 curr_node->val=temp;    //ones digit
                 carry=1;
             }
