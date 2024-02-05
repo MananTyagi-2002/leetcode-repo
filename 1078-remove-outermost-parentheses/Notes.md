@@ -1,1 +1,1 @@
-<h2>remove-outermost-parentheses Notes</h2><hr>make a new strin
+<h2>remove-outermost-parentheses Notes</h2><hr>make a new string and skip 
