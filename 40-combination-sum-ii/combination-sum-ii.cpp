@@ -1,30 +1,29 @@
 class Solution {
 public:
-    void helper(vector<int>& candidates,int target, int ind,vector<int>ds,vector<vector<int>>&ans)
+    void helper(vector<int>& candidates, int target,int ind,vector<vector<int>>& ans,vector<int> ds)
     {
-        // if(ind==candidates.size())
-        // { no need for this as we are using loop
             if(target==0)
             {
-                ans.push_back(ds);
-                return;
+             ans.push_back(ds);
+            return ;
             }
-        for(int i=ind;i<candidates.size();i++)
+           
+
+         for(int i=ind ;i<candidates.size();i++)
         {
             if(i>ind&&candidates[i]==candidates[i-1])continue;
-            if(candidates[i]>target)break;
+            if(candidates[i]>target)break ;
             ds.push_back(candidates[i]);
-            helper( candidates, target-candidates[i],i+1,ds,ans);
+            helper(candidates,target-candidates[i],i+1,ans,ds);
             ds.pop_back();
-        }    
+        }
+            return;
     }
     vector<vector<int>> combinationSum2(vector<int>& candidates, int target) {
-        
-            vector<int> ds;
-            vector<vector<int>>ans;
-            sort(candidates.begin(),candidates.end());
-            helper( candidates, target,  0,ds,ans);
-            return ans;
-
+        vector<vector<int>>ans;
+        vector<int> ds;
+        sort(candidates.begin(),candidates.end());
+        helper(candidates,target,0,ans,ds);
+        return ans;
     }
 };
