@@ -26,6 +26,7 @@ public:
             if(ispalindrome(index,i,s))
             {
                 path.push_back(s.substr(index,i-index+1));
+                //copy i-index+1 elements from index 
                 helper(s,i+1,ans,path);
                 path.pop_back();
             }
